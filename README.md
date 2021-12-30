@@ -14,11 +14,15 @@ However, after some profound research I found the ASCII table was built in such 
 plus 32 (Vice-Versa -32). After modifying the lowercase function from -32 to +32 which is used to generate the lowercase value, the programme now produces the
 lowercase value as it should behave.
 
+
+
 However, there was another problem I found with “ChangeToLowerCase” function for example: when the user entered ‘space’ the programme interpreted this to be
 an ‘@’ symbol. I found that the following line of code: "if(orinigalString[i]<=97” is not specific enough to specify the user’s input ‘space’ in terms of the ASCII table.
 After changing the code to as follows: “if(orinigalString[i]<=90&&originalString[i[>65)” the programme was able to interpret and output the user’s input ‘space’
 correctly. From looking at this ASCII table I was able to debug my programme by defining the integers which should be greater or less than or equal to within the
 “ChangeToUpperCase” and “ChangeToLowerCase” function.
+
+
 
 I will continue to further develop my programming skills and knowledge by doing more profound research and using other resources such as the book I used to
 assist me in understanding strings and how to manipulate them “C++ Programming Program Design Including Data Structures 7th Edition D.S. Malik” so that I will
